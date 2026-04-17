@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Karolína Krejčí + ChatGPT 5.3">
+    <title>Maledivy</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            background-image: url(https://www.etravel.cz/getmedia/df85965f-86a9-4104-a0d4-c4ecc078dc96/Uzasny-pohled-ptaci-oci-na-Maledivach_724331194.jpg?maxsidesize=1200&resizemode=force);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        header {
+            background: rgba(0,0,0,0.6);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background: #83f1cc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: rgb(0, 0, 0);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            background: rgba(0,0,0,0.6);
+            margin: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 50%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        /* Akordeon */
+        .accordion {
+            cursor: pointer;
+            padding: 12px;
+            background: #ec98d3;
+            border: none;
+            outline: none;
+            width: 100%;
+            text-align: left;
+            color: rgb(0, 0, 0);
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+
+        .panel {
+            display: none;
+            padding: 10px;
+            background: #5cffd6;
+            color: black;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0,0,0,0.7);
+        }
+
+        .zpet{
+            cursor: pointer;
+            color: #000000;
+            background-color: #b9f5e6;
+            font-weight: bolder;
+            border-radius: 25px;
+            padding: 10px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+<header id="top">
+    <h1>Maledivy</h1>
+    <h2>Ráj na Zemi</h2>
+</header>
+
+<nav>
+    <a href="#plaze">Pláže</a>
+    <a href="#aktivity">Aktivity</a>
+    <a href="#kultura">Kultura</a>
+</nav>
+
+<section id="plaze">
+    <a class="zpet" href="#top">Zpět nahoru</a>
+    <h2>Pláže</h2>
+    <p>Pláže na Maledivách jsou celosvětově proslulé svým jemným, zářivě bílým korálovým pískem, tyrkysovými lagunami a bohatým podmořským životem. Většina pláží je lemována tropickou vegetací a nabízí ideální podmínky pro šnorchlování a potápění přímo z břehu. </p>
+    <img src="https://d39-a.sdn.cz/d_39/c_img_QQ_7/TIJJl/maledivy.jpeg?fl=cro,0,156,3000,1687%7Cres,1200,,1" alt="Pláž Maledivy">
+    
+</section>
+
+<section id="aktivity">
+    <a class="zpet" href="#top">Zpět nahoru</a>
+    <h2>Aktivity</h2>
+    <p>Maledivy nabízejí širokou škálu aktivit, od adrenalinu na vlnách až po naprostou relaxaci na opuštěných plážích. Hlavním lákadlem je díky unikátnímu ekosystému podmořský život a vodní sporty.</p>
+
+    <button class="accordion">Potápění</button>
+    <div class="panel">
+        <p>Potápění na Maledivách je snem mnoha milovníků podmořského světa. Maledivy patří mezi nejlepší potápěčské destinace světa – nejen díky křišťálově čisté vodě a pestrobarevným korálům, ale také díky celoročně příznivým teplotám a skvělé dostupnosti potápěčských lokalit.</p>
+    </div>
+    
+
+    <button class="accordion">Šnorchlování</button>
+    <div class="panel">
+        <p>Ideální pro začátečníky i pokročilé. Vydejte se na šnorchlovací výlet ze člunu a ponořte se do světa plného barevných rybek, mořských želv, mant i žraloka velrybího. Užijete si přístup k lokalitám, kam se z pláže nedostanete – a otevře se vám skutečně dechberoucí podmořský svět.
+
+        </p>
+    </div>
+
+    <button class="accordion">Krmení rejnoků</button>
+    <div class="panel">
+        <p>Krmení rejnoků je na Maledivách oblíbená podvečerní atrakce, která probíhá v mnoha resortech přímo na břehu pláže. Rejnoci připlouvají do mělké vody za potravou, kterou jim nabízí personál, což umožňuje turistům pozorovat je z bezprostřední blízkosti. </p>
+    </div>
+
+</section>
+
+<section id="kultura">
+    <a class="zpet" href="#top">Zpět nahoru</a>
+    <h2>Kultura</h2>
+    <p>Maledivská kultura je fascinujícím mixem vlivů z Indie, Srí Lanky, Arábie a Afriky, hluboce zakořeněným v islámu, který je jediným povoleným náboženstvím v zemi. Místní lidé jsou známí svou pohostinností a skromným způsobem života, který se výrazně liší od atmosféry v uzavřených turistických resortech.</p>
+    <img src="https://www.cestujlevne.com/obrazky/38/82/13882-1200w.jpg" alt="Maledivy kultura">
+</section>
+
+<footer>
+    <p>&copy; 2026 Maledivy</p>
+</footer>
+
+<script>
+    const acc = document.querySelectorAll(".accordion");
+    acc.forEach(btn => {
+        btn.addEventListener("click", function() {
+            const panel = this.nextElementSibling;
+            panel.style.display = panel.style.display === "block" ? "none" : "block";
+        });
+    });
+</script>
+
+</body>
+</html>
